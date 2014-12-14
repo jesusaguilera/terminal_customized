@@ -1,2 +1,2 @@
-Prompt customized
-:::::::::::::::::
+### Prompt terminal customized
+
