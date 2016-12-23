@@ -26,11 +26,11 @@ alias 'ctgs'='ctags ./ -R . ; echo "tags" >> .gitignore' # Improve ctags task fr
 alias 'doc'='cd ~/Documents' # Open documents on terminal
 alias 'fdoc'='open ~/Documents' # Open documents on finder
 
-alias 'pro'='cd /projects' # Open projects on terminal
-alias 'fpro'='open /projects' # Open projects on finder
+alias 'pro'='cd ~/Projects' # Open projects on terminal
+alias 'fpro'='open ~/Projects' # Open projects on finder
 
-alias 'locals'='cd /projects/_locals' # Open projects on terminal
-alias 'flocals'='open /projects/_locals' # Open projects on finder
+alias 'locals'='cd ~/Projects/_locals' # Open projects on terminal
+alias 'flocals'='open ~/Projects/_locals' # Open projects on finder
 
 alias 'fimg'='open ~/Pictures' # Open imagenes on finder  
 alias 'img'='cd ~/Pictures' # Open imagenes on terminal  
@@ -41,6 +41,7 @@ alias 'dwn'='cd ~/Downloads' # Open download on terminal
 alias 'vm'='cd ~/.vim' # Open vim folder on terminal
 
 alias 'app'='cd /Applications' # Open documents on terminal
+alias 'fapp'='open /Applications' # Open documents on terminal
 
 alias 'edetailings'='cd /projects/go-tech/edetailings' # Open vim folder on terminal
 
@@ -71,3 +72,8 @@ export PS1="\[\e[1;29;136m\]Boooo!! 👻  \[\e[1;92m\] \w \[\e[0;35m\]\$(parse_g
 parse_git_branch() {
       git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
+
+# Autocomplete git commands and branches with TAB
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
