@@ -1,0 +1,65 @@
+[user]
+	name = jesusaguilra
+	email = jesusaguilera09@gmail.com
+
+
+[web]
+  browser = google-chrome
+
+[color]
+  ;ui = auto
+[color "branch"]
+  current = yellow bold
+  local = green bold
+  remote = cyan bold
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[color "status"]
+  added = green bold
+  changed = magenta bold
+  untracked = red bold
+  deleted = red
+
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+
+[alias]
+  r = rebase 
+  ####################
+  cm = commit -m 
+  ####################
+  co = checkout
+  ####################
+  ca = commit --amend
+  ####################
+  pl = pull
+  ####################
+  pso = push origin 
+  ####################
+  b = branch
+  br = branch -r
+  ####################
+  st = status
+  ####################
+  f = fetch
+  ####################
+  lg = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%C(magenta)\\ [%cn]" --decorate --color --date=relative --graph
+  ####################
+  showfiles = show --pretty="" --name-only 
+
+[mergetool]
+	keepBackup = true
+
+
+[url "https://"]
+	insteadOf = git://
+
+
+[core]
+	editor = /usr/bin/vim
