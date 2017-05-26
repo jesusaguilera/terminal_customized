@@ -65,7 +65,8 @@ export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 
-export PS1="\[\e[1;29;136m\]Boooo!! 👻  \[\e[1;92m\] \w \[\e[0;35m\]\$(parse_git_branch) \[\e[0;92m\]\$\[\e[0m\] "
+# export PS1="\[\e[1;29;136m\]Boooo!! 👻  \[\e[1;92m\] \w \[\e[0;35m\]\$(parse_git_branch) \[\e[0;92m\]\$\[\e[0m\] "
+export PS1="\[\e[1;29;136m\]☁︎ \[\e[1;92m\] \w\[\e[0;35m\]\$(parse_git_branch) \[\e[0;92m\]\$\[\e[0m\]"
 
 # Git branch in prompt.
 
