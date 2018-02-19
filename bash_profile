@@ -10,11 +10,10 @@ export PS1="\[\033[33;1m\]\w\[\033[m\]\[\e[0;35m\]\$(parse_git_branch) \$\[\e[0m
 export CLICOLOR=1
 # export LSCOLORS=GxFxCxDxBxegedabagaced
 export LSCOLORS=ExFxBxDxCxegedabagacad
-#
-# Cowsay
-#
 
-# cowsay "Hi $USER!, Hoy es $(date '+%A %B %d %Y %r')"
+
+export TERM=xterm-256color
+
 
 #
 # Alias
@@ -88,3 +87,6 @@ parse_git_branch() {
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
