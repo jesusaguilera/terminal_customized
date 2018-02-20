@@ -5,6 +5,8 @@ export PS1="➜  \[\033[33;1m\]\w\[\033[m\]\[\e[0;35m\]\$(parse_git_branch) \$\[
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
+export TERM=xterm-256color
+
 
 #
 # Alias
@@ -77,6 +79,9 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+<<<<<<< HEAD:bash_profile.txt
 
+=======
+>>>>>>> 529325e16b5880d2307f4fdb4a872fcde331f8a4:bash_profile
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
