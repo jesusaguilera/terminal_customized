@@ -1,7 +1,7 @@
 #
 # Export
 #
-export PS1="➜  \[\033[33;1m\]\w\[\033[m\]\[\e[0;35m\]\$(parse_git_branch) \$\[\e[0m\] "
+export PS1="➜ \[\033[33;1m\] \w\[\033[m\]\[\e[0;35m\]\$(parse_git_branch) \$\[\e[0m\] "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
