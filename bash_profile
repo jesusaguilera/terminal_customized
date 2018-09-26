@@ -1,16 +1,9 @@
 #
 # Export
 #
-
-# export PATH="/usr/local/bin:$PATH" >> ~/.bash_profile
-# export PS1="\[\e[1;29;136m\]Boooo!! 👻  \[\e[1;92m\] \w \[\e[0;35m\]\$(parse_git_branch) \[\e[0;92m\]\$\[\e[0m\] "
-# export PS1=" \[\e[1;92m\]\W\[\e[0;35m\]\$(parse_git_branch) \[\e[0;92m\]\$\[\e[0m\]"
-# export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\[\e[0;35m\]\$(parse_git_branch) \$ "
-export PS1="\[\033[33;1m\]\w\[\033[m\]\[\e[0;35m\]\$(parse_git_branch) \$\[\e[0m\] "
+export PS1="➜ \[\033[33;1m\] \w\[\033[m\]\[\e[0;35m\]\$(parse_git_branch) \$\[\e[0m\] "
 export CLICOLOR=1
-# export LSCOLORS=GxFxCxDxBxegedabagaced
 export LSCOLORS=ExFxBxDxCxegedabagacad
-
 
 export TERM=xterm-256color
 
@@ -45,8 +38,6 @@ alias 'vm'='cd ~/.vim' # Open vim folder on terminal
 
 alias 'app'='cd /Applications' # Open documents on terminal
 alias 'fapp'='open /Applications' # Open documents on terminal
-
-alias 'edetailings'='cd /projects/go-tech/edetailings' # Open vim folder on terminal
 
 alias 'e'='exit' # Close panel on tmux 
 
@@ -88,5 +79,9 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+<<<<<<< HEAD:bash_profile.txt
+
+=======
+>>>>>>> 529325e16b5880d2307f4fdb4a872fcde331f8a4:bash_profile
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
