@@ -7,7 +7,6 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 export TERM=xterm-256color
 
-
 #
 # Alias
 #
@@ -46,19 +45,21 @@ alias 'm'='mvim -v' # Run macvim on terminal
 alias 'b'='git for-each-ref --sort=committerdate refs/heads --format="%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)";' # Show git banches
 # alias 'b'='git for-each-ref --sort=committerdate refs/heads --format="%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)"|column -ts"|"};' # Show git banches
 
-
 # Shorcut to open url
 ow() {
   open "http://$1"
 }
 
+# Shorcut to search on Google
+gs() {
+  open "https://www.google.es/search?q=$1"
+}
 
 
   # b = # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # export PATH="/usr/local/sbin:$PATH"
 
 # Al instalar rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 source ~/.profile
 
 #Mysql
@@ -66,7 +67,6 @@ source ~/.profile
 MYSQL=/usr/local/mysql/bin
 export PATH=$PATH:$MYSQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
-
 
 # Git branch in prompt.
 
@@ -79,9 +79,6 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-<<<<<<< HEAD:bash_profile.txt
-
-=======
->>>>>>> 529325e16b5880d2307f4fdb4a872fcde331f8a4:bash_profile
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
