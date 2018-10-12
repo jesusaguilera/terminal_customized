@@ -45,12 +45,12 @@ alias 'm'='mvim -v' # Run macvim on terminal
 alias 'b'='git for-each-ref --sort=committerdate refs/heads --format="%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)";' # Show git banches
 # alias 'b'='git for-each-ref --sort=committerdate refs/heads --format="%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)"|column -ts"|"};' # Show git banches
 
-# Shorcut to open url
+# Shortcut to open url
 ow() {
   open "http://$1"
 }
 
-# Shorcut to search on Google
+# Shortcut to search on Google
 gs() {
   open "https://www.google.es/search?q=$1"
 }
