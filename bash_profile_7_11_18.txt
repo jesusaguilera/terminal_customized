@@ -46,10 +46,14 @@ alias 'm'='mvim -v' # Run macvim on terminal
 alias 'n'='nvim' # Run macvim on terminal
 
 # Copy tern-projects to project root folder
-alias 'trn'='cp ~/Documents/tern-project.txt ./.tern-project | echo "Fichero tern-projects copiado a directorio actual"'
+alias 'trn'='cp ~/Documents/tern-project.txt ./.tern-project ; echo ".tern-project" >> .gitignore ; echo "Fichero tern-projects copiado a directorio actual"'
 
 # Copy jshintrc to project root folder
-alias 'jsh'='cp ~/Documents/jshintrc.txt ./.jshintrc | echo "Fichero jshintrc copiado a directorio actual"'
+alias 'jsh'='cp ~/Documents/jshintrc.txt ./.jshintrc ; echo ".jshintrc" >> .gitignore ; echo "Fichero jshintrc copiado a directorio actual"'
+
+# Join trn, ctgs and jsh in one statment
+alias 'initpro'='cp ~/Documents/tern-project.txt ./.tern-project ; echo ".tern-project" >> .gitignore ; cp ~/Documents/jshintrc.txt ./.jshintrc ; echo ".jshintrc" >> .gitignore ; ctags ./ -R . ; echo "tags" >> .gitignore ; echo "Creado tern-projec, jshintrc y ctags, y añdido gitignore"'
+
 
 # Show git banches
 alias 'b'='git for-each-ref --sort=committerdate refs/heads --format="%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)";' 
