@@ -9,6 +9,7 @@ export ZSH="/Users/jaguilera/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+ZSH_DISABLE_COMPFIX=true
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,7 +72,6 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.my_alias.sh
 
 # User configuration
 
@@ -98,3 +98,46 @@ source ~/.my_alias.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# Alias
+#
+#  alias ls='ls -lfGFh' # custom ls command
+alias '..'='cd ..'
+alias 'ls'='ls -lf' # custom ls command
+alias 'cl'='clear' # clear command
+
+alias 'ctags'='/usr/local/bin/ctags' # To use ctags-exuberants
+alias 'ctgs'='ctags ./ -R . ; echo "tags" >> .gitignore' # Improve ctags task from terminal
+
+alias 'doc'='cd ~/Documents' # Open documents on terminal
+alias 'fdoc'='open ~/Documents' # Open documents on finder
+
+alias 'pro'='cd ~/Projects' # Open projects on terminal
+alias 'fpro'='open ~/Projects' # Open projects on finder
+
+alias 'locals'='cd ~/Projects/_locals' # Open projects on terminal
+alias 'flocals'='open ~/Projects/_locals' # Open projects on finder
+
+alias 'fimg'='open ~/Pictures' # Open imagenes on finder  
+alias 'img'='cd ~/Pictures' # Open imagenes on terminal  
+
+alias 'fdwn'='open ~/Downloads' # Open download on finder
+alias 'dwn'='cd ~/Downloads' # Open download on terminal
+
+alias 'nv'='cd ~/.config/nvim' # Open vim folder on terminal
+
+alias 'app'='cd /Applications' # Open documents on terminal
+alias 'fapp'='open /Applications' # Open documents on terminal
+
+alias 'e'='exit' # Close panel on tmux 
+
+# alias 'm'='mvim -v' # Run macvim on terminal
+alias 'n'='nvim' # Run macvim on terminal
+
+# Show git banches
+alias 'b'='git for-each-ref --sort=committerdate refs/heads --format="%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)";' 
+
+# NVM node version manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
