@@ -19,3 +19,7 @@ https://gist.github.com/jesusaguilera/44a2cc2a288c8179d142bedde48982a4#file-iter
 #### Zsh-autosuggestion
 https://github.com/zsh-users/zsh-autosuggestions
 
+---
+
+#### Install xcode for High Sierra
+https://codewithchris.com/xcode-update/
