@@ -103,3 +103,6 @@ source ~/.my_alias.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Ignore node_modules searching files
+export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
