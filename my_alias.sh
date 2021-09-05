@@ -48,9 +48,14 @@ alias 'b'='git for-each-ref --sort=committerdate refs/heads --format="%(HEAD)%(c
 
 
 # Shortcut to open url
-# ow () {
-#   open "http://$1"
-# }
+ow () {
+  open "http://$1"
+}
+
+# Find file by name
+locate() {
+  mdfind -name $1
+}
 
 # gst () {
 #   open "http://github.com/StringProjects"
