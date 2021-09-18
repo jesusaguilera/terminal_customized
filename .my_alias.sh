@@ -31,6 +31,7 @@ alias 'e'='exit' # Close panel on tmux
 # alias 'm'='mvim -v' # Run macvim on terminal
 alias 'n'='nvim' # Run macvim on terminal
 
+
 # Copy tern-projects to project root folder
 alias 'trn'='cp ~/Documents/tern-project.txt ./.tern-project ; echo ".tern-project" >> .gitignore ; echo "Fichero tern-projects copiado a directorio actual"'
 
@@ -48,18 +49,27 @@ alias 'b'='git for-each-ref --sort=committerdate refs/heads --format="%(HEAD)%(c
 
 
 # Shortcut to open url
-# ow () {
-#   open "http://$1"
-# }
+ow () {
+  open "http://$1"
+}
 
-# gst () {
-#   open "http://github.com/StringProjects"
-# }
+# Find file by name
+locate() {
+  mdfind -name $1
+}
+
+gh () {
+  open "http://github.com/jesusaguilera"
+}
+
+gst () {
+  open "http://github.com/StringProjects"
+}
 
 # Shortcut to search on Google
-# gs () {
-#   open "https://www.google.com/search?q=$1"
-# }
+gs () {
+  open "https://www.google.com/search?q=$1"
+}
 
 # Shortcut to transalte on Google translate
 # rae () {
