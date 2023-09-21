@@ -8,7 +8,7 @@ export ZSH="/Users/jaguilera/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="sorin"
+ZSH_THEME="bullet-train"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=241'
 
@@ -109,3 +109,18 @@ export NVM_DIR="$HOME/.nvm"
 
 # Ignore node_modules searching files
 export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
+
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/sbin:$PATH
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+alias python=/usr/bin/python3
+
+
+# API KEY for plz AI in terminal
+export OPENAI_API_KEY='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'
+
+# Starship
+ eval "$(starship init zsh)"
