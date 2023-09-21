@@ -1,0 +1,25 @@
+---
+background: "#0e0d10"
+accent: "#3d2aff"
+foreground: "#ffffff"
+details: darker
+terminal_colors:
+  normal:
+    black: "#000000"
+    red: "#a52aff"
+    green: "#7129ff"
+    yellow: "#3d2aff"
+    blue: "#2b4fff"
+    magenta: "#2883ff"
+    cyan: "#28b9ff"
+    white: "#f1f1f1"
+  bright:
+    black: "#2f2f2f"
+    red: "#ba5aff"
+    green: "#905aff"
+    yellow: "#685aff"
+    blue: "#5c78ff"
+    magenta: "#5ea2ff"
+    cyan: "#5ac8ff"
+    white: "#ffffff"
+name: thedigitallife
