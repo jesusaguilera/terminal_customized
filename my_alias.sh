@@ -31,6 +31,9 @@ alias 'e'='exit' # Close panel on tmux
 # alias 'm'='mvim -v' # Run macvim on terminal
 alias 'n'='nvim' # Run macvim on terminal
 
+#exa
+alias 'll'='exa --long --header --git '
+
 
 # Copy tern-projects to project root folder
 alias 'trn'='cp ~/Documents/tern-project.txt ./.tern-project ; echo ".tern-project" >> .gitignore ; echo "Fichero tern-projects copiado a directorio actual"'
